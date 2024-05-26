@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/all">
+
+    <TextView
+        android:id="@+id/tvClicks"
+        android:layout_width="86dp"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Clicks: 0"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvLevel"
+        android:layout_width="92dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/tvClicks"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Level: 1"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="196dp"
+        android:layout_height="131dp"
+        android:layout_below="@id/tvLevel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="Click me!"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/btnClick"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnUpgrade1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upgrade 1"/>
+            <TextView
+                android:id="@+id/tvUpgrade1Cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cost: 50"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnUpgrade2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upgrade 2"/>
+            <TextView
+                android:id="@+id/tvUpgrade2Cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cost: 100"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnUpgrade3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upgrade 3"/>
+            <TextView
+                android:id="@+id/tvUpgrade3Cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cost: 150"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSuperStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Super Ready!"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/btnClick"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/btnSuper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activate Super!"
+        android:layout_below="@id/tvSuperStatus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/btnSuper"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnUpgradeSuperDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upgrade Super Duration"/>
+            <TextView
+                android:id="@+id/tvUpgradeSuperDurationCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cost: 200"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnUpgradeSuperCooldown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upgrade Super Cooldown"/>
+            <TextView
+                android:id="@+id/tvUpgradeSuperCooldownCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cost: 200"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
